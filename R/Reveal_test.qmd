@@ -1,8 +1,6 @@
 ---
 title: "GCDF 2.0 As a New User"
 author: "Teal Emery"
-project:
-  output-dir: docs
 format:
   revealjs: 
     theme: dark
