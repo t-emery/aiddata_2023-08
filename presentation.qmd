@@ -1,25 +1,73 @@
 ---
-title: "Working with the GCFD: A New User's Perspective"
+title: "Working with the GCDF Dataset:"
+subtitle: "A New User's Perspective"
 author: "Teal Emery"
-format: revealjs
+format: 
+  revealjs:
+    theme: solarized
+    logo: images/tealinsights_logo.png
+    embed-resources: true
+    link-external-newwindow: true
 editor: visual
 ---
 
-## Quarto
+## Agenda
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+::: incremental
+1.  Working with the GCDF data as a new user: joys, pain points, and ideas for marginal improvements.
+2.  `chinadevfin2` - an R package for working with the GCDF 2.0 dataset.
+3.  Group discussion.
+:::
 
-## Bullets
+# 1. Working with the GCDF data as a new user
 
-When you click the **Render** button a document will be generated that includes:
+## Context
 
--   Content authored with markdown
--   Output from executable code
+How I became a connoisseur of large international datasets...
 
-## Code
+::: incremental
+1.  Private sector
+2.  Policy research
+3.  Teaching
+:::
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+## Overall Assessment
 
-```{r}
-1 + 1
-```
+The GCDF 2.0 is a well organized dataset with *A LOT* of amazing data. The methodology and variables are well documented. The pain points I've experienced working with it are common to most large datasets:
+
+::: incremental
+1.  Getting the data ready for analysis is time consuming.
+2.  Country names are not presented in a standardized format.
+:::
+
+## Three Easy Improvements
+
+You work hard to create these datasets. What are some easy-to-implement changes to enhance their use?
+
+::: incremental
+1.  Release the dataset as a `.csv` file in addition to the `.xlsx` to make it easier to import into data analysis software.
+2.  Add country [ISO3C](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) codes for recipient countries to make it easier to combine the GCFD data with complementary datasets.\
+3.  Create a "cookbook" demonstrating simple examples of how users can use the data to gain insights, and answers to common challenges. This can ease adoption of the dataset.
+:::
+
+# 2. Introducing the `chinadevfin2` R Package
+
+## `chinadevfin2`
+
+[![](images/chinadevfin2_logo.png){fig-align="center" width="350"}](https://t-emery.github.io/chinadevfin2/)
+
+## Caveats
+
+1.  So far, this is a personal project.
+2.  It is a *minimum viable product.*
+3.  It won't take too much effort to adapt this to the new GCDF 3.0 dataset.
+
+## Let's Explore
+
+1.  [`chinadevfin2` R package website](https://t-emery.github.io/chinadevfin2/)
+2.  [Getting Started tutorial](https://t-emery.github.io/chinadevfin2/articles/getting_started.html)
+3.  [A simple interactive web app built using `chinadevfin2`](https://tealinsights.shinyapps.io/gcdf2_explorer/)
+
+# 3. Group Discussion
+
+
